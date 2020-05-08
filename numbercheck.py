@@ -15,9 +15,9 @@ def isPhoneNumber(text):
         if not text[i].isdecimal():
             return False
     return True
-email = ' call me tomorrow on 0411 222 333 or 0422 333 444'
-foundNumber = False
-for i in range(len(email)):
+email = ' call me tomorrow on 0411 222 333 or 0422 333 444' # change variable name 
+foundNumber = False 
+for i in range(len(email)): # change to name of variable in line 18 
     sequence = email[i:i+12]
     if isPhoneNumber(sequence):
         print('phone number found: ' + sequence + ' in the email')
